@@ -1,0 +1,17 @@
+[project]
+name = "tabpfn-regressor-macos-repro"
+version = "0.1.0"
+description = "Minimal repro for intermittent TabPFNRegressor native crash on macOS arm64"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "numpy==2.4.3",
+  "pandas==2.3.3",
+  "scipy==1.17.1",
+  "scikit-learn==1.8.0",
+  "torch==2.10.0",
+  "tabpfn==6.4.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
